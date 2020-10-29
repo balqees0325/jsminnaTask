@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGN UP PAGE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload='document.form1.email.focus()'>
+  <div class="container">
+  <h1>Sign Up</h1>
+  <p text1>Please fill in this form to create an account!</p>
+  <hr>
+  <form name="form1" action="post">
+    <div class="form">
+      <div class="name">
+    <span class="first">
+      <input type="text" name="first name" placeholder="First Name" required></span>
+      <span class="last">
+     <input type="text" name="last name" placeholder="Last Name" required></span>
+    </div>
+    <div class="email">
+       <input type="email" name="email" placeholder="Email" required>
+      </div>
+       <div class="password">
+       <input type="password" name="password" placeholder="Password" pattern=".{8}" required title="Enter a password with minimum of 8 digits">
+      </div>
+       <div class="comfirm">
+       <input type="password" name="password" placeholder="Comfirm Password" pattern=".{4,8}" required title="Enter a password with a minimum of 8 digits">
+      </div>
+       <div class="checkbox">
+       <input type="checkbox" name="checkbox"> I accept the<a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
+      </div>
+      <div >
+        <input id="button" type="submit" name="sign up" placeholder="Sign Up">
+      </div>
+    </div>
+  </form>
+
+  <div>
+    <p class="text">Already have an account? <a href="logIn.html">Login here.</a></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
