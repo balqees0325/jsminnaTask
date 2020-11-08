@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SIGN UP PAGE</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
 </head>
 <body onload='document.form1.email.focus()'>
-  <div class="container" style="width:40%">
+  <div class="container flex">
   <h1>Sign Up</h1>
   <p text1>Please fill in this form to create an account!</p>
   <hr>
+  <div class="form">
   <form name="form1" action="post">
-    <div class="form">
       <div class="name">
     <span class="first">
       <input type="text" name="first name" placeholder="First Name" required></span>
@@ -32,15 +32,15 @@
        <input type="checkbox" name="checkbox"> I accept the<a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a>
       </div>
       <div >
-        <input id="button" type="submit" name="sign up" placeholder="Sign Up">
+        <input class="button" type="submit" name="sign up" placeholder="Sign Up">
       </div>
-    </div>
   </form>
+</div>
 </div>
   <div>
     <p class="text">Already have an account? <a href="logIn.html">Login here.</a></p>
   </div>
 
-<script src="script.js"></script>
+<script src="script1.js"></script>
 </body>
 </html>

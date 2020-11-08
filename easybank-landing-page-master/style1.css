@@ -6,20 +6,24 @@
 body {
   background-color: #3598dc;
   font: normal 15px helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 6% auto;
-  text-align: left;
 }
 .container {
+  max-width: 500px;
   background-color: #fff;
-  padding: 5% 10%;
   box-shadow: 0px 2px 2px 1px;
   border: none;
   border-radius: 4px;
 }
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  padding: 20px 40px;
+  text-align: left;
+}
+
 h1 {
   font-weight: 600;
   font-size: 1.5em;
@@ -45,20 +49,24 @@ input {
 div.email input,
 div.password input,
 div.comfirm input {
-  width: 100%;
+  width: 95%;
 }
 span.first input,
 span.last input {
   width: 45%;
 }
 
-#button {
+.button {
   margin: 6px;
   border: none;
   color: #fff;
   background-color: #3598dc;
   text-align: center;
   border-radius: 4px;
+}
+.button:hover {
+  background-color: rgb(107, 107, 231);
+  transform: scale(1);
 }
 p {
   color: grey;
@@ -82,42 +90,20 @@ a {
   color: #fff;
 }
 
-@media (max-width: 776px) {
-  .container {
-    width: 100%;
-  }
-  div.email input,
-  div.password input,
-  div.comfirm input {
-    width: 100%;
-  }
-  span.first input,
-  span.last input {
-    width: 100%;
-  }
-  .text {
-    color: #fff;
-
-    text-align: center;
+@media (max-width: 765px) {
+  .flex {
+    width: 90%;
   }
 }
 
-@media (min-width: 826px) {
-  .container {
-    width: 100%;
-  }
+@media (max-width: 500px) {
   div.email input,
   div.password input,
   div.comfirm input {
-    width: 100%;
+    width: 90%;
   }
   span.first input,
   span.last input {
-    width: 45%;
-  }
-  .text {
-    color: #fff;
-
-    text-align: center;
+    width: 90%;
   }
 }

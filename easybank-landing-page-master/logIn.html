@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LOG IN PAGE</title>
    <link rel="stylesheet" href="style.css">
-
-
+   <link rel="stylesheet" href="style1.css">
 </head>
 <body onload='document.form1.text1.focus()'>
-  <form name="form1" action="post" class="container" style="width:35%;">
+<div class="container flex">
+  <form name="form1" action="post">
     <h1 class="login">Log In</h1>
     <div class="form">
     <div class="email">
@@ -19,11 +19,11 @@
        <input type="password" name="password" placeholder="Password" required>
       </div>
       <div>
-        <input id="button" type="submit" name="log in" placeholder="Log In">
+        <input class="button btn " type="submit" name="log in" placeholder="Log In">
       </div>
     </div>
   </form>
-
-  <script src="script.js"></script>
+</div>
+  <script src="script1.js"></script>
 </body>
 </html>
