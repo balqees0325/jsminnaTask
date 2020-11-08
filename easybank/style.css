@@ -126,23 +126,15 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  min-height: 100vh;
 }
-div.showcase-image {
-  width: 100%;
-  object-fit: cover;
-  position: relative;
-}
+
 .showcase-image img {
   width: 40rem;
   background-image: url("images/bg-intro-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  position: absolute;
-  top: 0;
-  right: 0px;
-  bottom: 20px;
-  left: 30px;
 }
 .showcase-2 {
   background-color: var(--Light-Grayish-Blue);
