@@ -239,6 +239,13 @@ p {
 }
 
 @media (max-width: 868px) {
+  .grid,
+  .grid-2,
+  .grid-3,
+  .footer {
+    max-width: 100%;
+    overflow: hidden;
+  }
   .showcase-text h1 {
     font-weight: 500;
     font-size: 2rem;

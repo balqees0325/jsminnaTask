@@ -62,6 +62,7 @@ span.last input {
 
 .button {
   margin: 6px;
+  padding: 8px 15px;
   border: none;
   color: #fff;
   background-image: linear-gradient(
