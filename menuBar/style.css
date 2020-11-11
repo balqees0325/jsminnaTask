@@ -53,21 +53,20 @@ nav {
   color: rgb(255, 0, 191);
 }
 .fa-github:hover {
-  color: rgb(73, 75, 78);
+  color: rgb(12, 12, 12);
 }
 .hamburger:focus {
   outline: none;
 }
+.hide {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav-ul {
-    display: none;
+    display: block;
     flex-direction: column;
     width: 100%;
-  }
-  .nav-ul.show {
-    display: flex;
-  }
-  .hamburger {
-    display: block;
+    z-index: 10;
   }
 }
