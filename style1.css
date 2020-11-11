@@ -97,6 +97,9 @@ p {
 a {
   color: #fff;
 }
+.button:disabled {
+  cursor: none;
+}
 
 @media (max-width: 765px) {
   .flex {
