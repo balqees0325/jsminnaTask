@@ -1,4 +1,4 @@
- *{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -35,24 +35,15 @@ nav {
 .nav-ul li a:hover {
   background-color: rgb(207, 12, 233);
 }
+.hamburger {
+  display: none;
+}
 
-​​​​​​​
-@media (max-width: 768px) {
+​​​​​@media (max-width: 786px) {
   .nav-ul {
-    display: block;
-    flex-direction: column;
-    width: 100%;
-    z-index: 10;
-  }
-  .hide {
     display: none;
   }
-}
-@media(min-width: 760px) {​​​​​​​
-  .hamburger, .icons i {​​​​​​​​
-   display: none;
-   color: #fff;
-   font-size: 20px;
-   cursor: pointer;
-  }​​​​​​​​
+  .hamburger {
+    display: block;
   }
+}

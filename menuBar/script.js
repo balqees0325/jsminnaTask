@@ -1,11 +1,12 @@
 const hamburger = document.querySelector('#hamburger');
-const navUl =  document.querySelector('#nav-ul');
+
 
 hamburger.addEventListener('click', () => {
-  console.log("clicked")
-  if(navUl.classList.contains("hide")) {
-    navUl.classList.remove("hide");
+  const navUl =  document.querySelector('#nav-ul');
+  
+  if(navUl.classList.contains("#nav-ul")) {
+    navUl.classList.remove("#nav-ul");
   } else {
-   navUl.classList.add("hide");
+   navUl.classList.add("#nav-ul");
   }
 });
