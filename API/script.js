@@ -43,7 +43,7 @@ const initialize = countriesData => {
 
   document.getElementById('population').innerHTML = countryData.population.toLocaleString('en-US');
 
-  document.getElementById('currencies').innerHTML = countryData.currencies.filter(currency => currency.name).map(currency => `${currency.name} (${currency.code})`).join('* ');
+  document.getElementById('currencies').innerHTML = countryData.currencies.filter(currency => currency.name).map(currency => `${currency.name} (${currency.code})`).join(' , ');
 
   document.getElementById('region').innerHTML = countryData.region;
 

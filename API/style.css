@@ -38,7 +38,7 @@ h1 {
   background-image: url("worldMap.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right 0% bottom 0;
+  background-position: right 0 bottom 0;
 }
 .flag {
   background-color: #eee;
@@ -62,14 +62,15 @@ h1 {
 .info select {
   display: flex;
   flex-direction: column;
+  justify-self: center;
   text-align: center;
   margin: 0 auto;
-  padding: 5px;
-  min-width: 100%;
+  padding: 0 5px 5px;
+  width: 97%;
   font-weight: 800;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #333;
-  border: none;
+  border: 2px solid rgb(104, 102, 102);
   border-radius: 4px;
   background-color: transparent;
 }
@@ -101,7 +102,7 @@ h1 {
   .info select {
     font-size: 12px;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .info p {
     padding: 0 10px 5px 10px;

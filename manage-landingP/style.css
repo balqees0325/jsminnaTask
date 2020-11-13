@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Bright-red: hsl(12, 88%, 59%);
+  --Dark-blue: hsl(228, 39%, 23%);
+  --Dark-Grayish-Blue: hsl(227, 12%, 64%);
+  --very-pale-red: hsl(13, 100%, 96%);
+  --very-dark-Blue: hsl(233, 12%, 13%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+  font-family: "Be Vietnam", sans-serif;
+  font-size: 16px;
+  color: var(--Dark-Grayish-Blue);
+  line-height: 1.6;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-BlueGrayish-Blue);
+}
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--very-dark-Blue);
+}
+p {
+  margin: 10px 0;
+}
+/*Navbbar*/
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  padding: 10px;
+  margin: 0 5px;
+}
+.navbar a:hover {
+  border-bottom: 2px solid var(--very-pale-red);
+}
+.navbar .btn {
+  padding: 12px 25px;
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+.second-nav {
+  display: none;
+  background-color: var(--White);
+  position: fixed;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 2;
+  max-width: 300px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 1px 1px;
+}
+.second-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.second-nav ul li {
+  margin: 0 5px;
+  padding: 10px;
+}
+.btn {
+  border: none;
+  border-radius: 50px;
+  padding: 15px 25px;
+  background-color: var(--Bright-red);
+  color: #fff;
+  font-size: 12px;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+/*Showcase*/
+.showcase-text h1 {
+  font-weight: 500;
+  font-size: 3rem;
+}
+.showcase-text {
+  padding-right: 40px;
+  margin-top: 40px;
+}
+/*Utilities*/
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.flex-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showcase-image img {
+  background-image: url("images/bg-simplify-section-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.showcase-image img:first-child {
+  margin-top: 60px;
+}
