@@ -1,12 +1,13 @@
-const hamburger = document.querySelector('#hamburger');
+ const hamburgerIcon = document.getElementById("ham-image");
+ const secondNav = document.getElementById("second-nav");
+ 
+const toggleBar = () => { 
+   if(hamburgerIcon.src.endsWith('icon-hamburger.svg')) {
+  hamburgerIcon.src = 'images/icon-close.svg';
+   } else {
+  hamburgerIcon.src = "images/icon-hamburger.svg";
+   }
 
-
-hamburger.addEventListener('click', () => {
-  const navUl =  document.querySelector('#nav-ul');
-  
-  if(navUl.classList.contains("#nav-ul")) {
-    navUl.classList.remove("#nav-ul");
-  } else {
-   navUl.classList.add("#nav-ul");
-  }
-});
+  secondNav.classList.toggle('displayNav')
+};
+hamburgerIcon.addEventListener('click', toggleBar);
