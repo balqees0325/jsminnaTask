@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <script src="./script.js" defer></script>
+  <script src="./script.js"></script>
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -27,7 +27,7 @@
  </div>
  <div class="right">
    <h3>Try it free 7 days then $20/mo. thereafter</h3>
-   <form id="form" class="form" onsubmit = "formValidation()">
+   <form id="form" class="form" onsubmit ="return formValidation();">
      <div>
        <input type="text" name="firstN" placeholder="First Name" id="firstN"><small id="errorMessage"></small>
      </div>

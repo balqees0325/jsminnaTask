@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./powerpuff-girls.jpg"></script>
   <title>MEET MENTORS</title>
 </head>
 <body>
@@ -17,13 +18,13 @@
     </div>
     <div class="grid flex1">
        <h2>Meet our amazing mentors today to have a smooth sail on your journey into the programming world</h2>
-       <form action="">
+       <form action="post" id="form" class="form" onsubmit="return validateForm();">
          <h2 class="head">Join our team of mentors</h2>
          <div class="name">
-           <input type="text" placeholder="Name" required>
+           <input type="text" placeholder="Name" id="name">
          </div>
          <div class="email">
-           <input type="email" placeholder="Email" required>
+           <input type="email" placeholder="Email" id="email">
          </div>
          <button>join</button>
        </form>
@@ -51,8 +52,9 @@
       </div>
      </div>
     </div>
-    <div class="grid2">
+    <div class="grid0">
       <h1>meet our world class mentors</h1>
+      <div class="grid2">
        <div class="card">
         <img src="./avatar-richard.png" alt="mentor">
         <p><strong>Frontend engineer/ UI&UX designer</strong> with varsatile experience programming javascript and its frameworks <br><strong>Abdulqudus Ibn Abubakar</strong></p>
@@ -68,6 +70,7 @@
        <div class="card">
         <img class="img1" src="./powerpuff-girls.jpg" alt="mentor">
         <p><strong> Frontend engineer/ UI&UX designer</strong> with varsatile experience programming javascript and its frameworks <br><strong>Khadeejah Ladan</strong></p>
+       </div>
        </div>
     </div>
     <div class="grid3">
