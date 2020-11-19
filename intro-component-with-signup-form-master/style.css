@@ -7,7 +7,7 @@
 }
 body {
   background-color: hsl(0, 100%, 74%);
-  background-image: url("../images/bg-intro-desktop.png");
+  background-image: url("./images/bg-intro-desktop.png");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Poppins", sans-serif;
@@ -26,10 +26,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position:relative;
+  position: relative;
 }
 .left {
-  width: 350px; 
+  width: 350px;
   margin: 40px 90px 0 0;
 }
 h1 {
@@ -38,7 +38,7 @@ h1 {
 }
 .left > p {
   color: #eee;
-} 
+}
 .right {
   display: flex;
   flex-direction: column;
@@ -48,27 +48,31 @@ h1 {
 }
 h3 {
   background-color: hsl(248, 32%, 49%);
-  padding:10px 20px;
+  padding: 10px 20px;
   width: 100%;
   border-radius: 8px;
   margin-top: 10px;
 }
- form {
-   background-color: #fff;
-   width: 500px;
-   box-shadow: 0 3px 1px 7px;
-   border-radius: 8px;
-   margin: 30px auto;
-   padding: 20px;
- }
-  input {
-    margin: 10px 0;
-    padding-left: 8px;
-    width: 100%;
-    height: 45px;
-    border: 1px solid #eee;
-    border-radius: 4px;
-  }
+form {
+  background-color: #fff;
+  width: 500px;
+  box-shadow: 0 3px 1px 7px;
+  border-radius: 8px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+input {
+  margin: 10px 0;
+  padding-left: 8px;
+  width: 100%;
+  height: 45px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+input:focus {
+  outline: none;
+}
 .submit {
   background-color: hsl(154, 59%, 51%);
   color: #fff;
@@ -92,16 +96,16 @@ a {
   right: 0;
   left: 23rem;
 }
-.attribution>a {
+.attribution > a {
   text-decoration: none;
   color: red;
 }
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
+    position: relative;
   }
   .left {
     width: 40%;
@@ -121,7 +125,7 @@ a {
     width: 80%;
   }
   form {
-   width: 80%;
+    width: 80%;
   }
   .submit {
     font-size: 1rem;
@@ -130,69 +134,59 @@ a {
     font-size: 12px;
   }
   .attribution {
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   left: 14rem;
-   text-align: center;
- }
-  
- }
- @media (max-width: 568px) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 14rem;
+    text-align: center;
+  }
+}
+@media (max-width: 568px) {
+  body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("./images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #fff;
+  }
   .container {
     margin: 20px auto;
     padding: 20px;
     line-height: 1.6;
   }
-   .flex {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-   }
-   .left {
-     margin: 0 30px;
-     justify-content: center;
-     text-align: center;
-     width: 100%;
-   }
-   h3 {
-     width: 100%;
-   }
-   form {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    margin: 0 30px;
+    justify-content: center;
+    text-align: center;
     width: 100%;
-   }
-   .submit {
-     font-size: 14px;
-     text-align: center;
-     padding-right: 8px;
-   }
-   small {
-     font-size: 12px;
-   }
-   .attribution {
+  }
+  h3 {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  .submit {
+    font-size: 14px;
+    text-align: center;
+    padding-right: 8px;
+  }
+  small {
+    font-size: 12px;
+  }
+  .attribution {
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
     text-align: center;
   }
- }
- 
-
-
-
-
-
-
-Red: hsl(0, 100%, 74%) 
-- Green: hsl(154, 59%, 51%)
-
-### Accent
-
-- Blue: hsl(248, 32%, 49%)
-
-### Neutral
-
-- Dark Blue: hsl(249, 10%, 26%) 
-- Grayish Blue: hsl(246, 25%, 77%)
+}

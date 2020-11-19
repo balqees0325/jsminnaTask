@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="./script.js" defer></script>
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -27,11 +27,19 @@
  </div>
  <div class="right">
    <h3>Try it free 7 days then $20/mo. thereafter</h3>
-   <form class="form" action="">
-     <div><input type="text" name="firstN" placeholder="First Name"> </div>
-     <div><input type="text" name="lastN" placeholder="Last Name "></div>
-     <div><input type="email" name="email" placeholder="Email Address"> </div>
-     <div><input type="password" name="password" placeholder="Password"></div>
+   <form id="form" class="form" onsubmit = "formValidation()">
+     <div>
+       <input type="text" name="firstN" placeholder="First Name" id="firstN"><small id="errorMessage"></small>
+     </div>
+     <div>
+       <input type="text" name="lastN" placeholder="Last Name" id="lastN"><small id="errorMessage"></small>
+     </div>
+     <div>
+       <input type="email" name="email" placeholder="Email Address" id="email"><small id="errorMessage"></small>
+     </div>
+     <div>
+       <input type="password" name="password" placeholder="Password" id="password"><small id="errorMessage"></small>
+     </div>
      <div><input class="submit" type="submit" name="submit" value=" Claim your free trial"></div>
     <p><small>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></small></p>
 </form>
@@ -39,7 +47,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="github.com/balqees0325">Balqees</a>.
+      Coded by <a href="github.com/balqees0325">Balqees &copy:100DsC1</a>
     </p>
   </footer>
 </div>
