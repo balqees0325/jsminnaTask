@@ -8,7 +8,7 @@ let error = document.querySelector('#errorMessage');
 let message;
 
  if(first === "" || last === "") {
-	 message = 'input field can not be empty';
+	 message = 'sorry input field can not be empty';
 	 error.innerHTML = message;
 	 return  false;
  } if(email.indexOf('@') == -1 || email === '') {
@@ -16,9 +16,8 @@ let message;
 	 error.innerHTML = message;
 	 return false;
  } if(password !== /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/) {
-	 message = 'password you entered not valid';
+	 message = 'password you entered is not valid';
 	 error.innerHTML = message;
-	 
 	 return false;
  } else {
 	 alert('form submitted succesfully')

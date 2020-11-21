@@ -1,14 +1,17 @@
-let name = document.querySelector('#name').Value;
+let name = document.querySelector('#name').value;
 let email = document.querySelector('#email').value;
+
+
  const validateForm = () => {
-   if(name === '' || name.length < 10 ) {
+    console.log('clicked');
+   if(name.length < 10 ) {
      alert('field can not be empty/ entry to small!');
      return false;
    } if (email.indexOf('@') === -1 || email === '') {
      alert('invalid email entry!');
      return false;
    } else {
-     alert ('form successfully filled!');
+     alert('form successfully filled!');
      return true;
    }
  }

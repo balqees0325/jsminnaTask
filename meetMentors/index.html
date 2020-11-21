@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
-  <script src="./powerpuff-girls.jpg"></script>
+  <script src="./script.js"></script>
   <title>MEET MENTORS</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
     </div>
     <div class="grid flex1">
        <h2>Meet our amazing mentors today to have a smooth sail on your journey into the programming world</h2>
-       <form action="post" id="form" class="form" onsubmit="return validateForm();">
+       <form action="post" id="form" class="form">
          <h2 class="head">Join our team of mentors</h2>
          <div class="name">
            <input type="text" placeholder="Name" id="name">
@@ -26,7 +26,7 @@
          <div class="email">
            <input type="email" placeholder="Email" id="email">
          </div>
-         <button>join</button>
+         <button onclick="validateForm()">join</button>
        </form>
     </div>
     <div class="grid1">
@@ -83,10 +83,10 @@
       <p>Check out for an available mentor to get connected</p>
       <form action="">
         <div class="name">
-          <input type="text" placeholder="Enter your track" required>
+          <input type="text" placeholder="Enter your track" id="name">
         </div>
         <div class="email">
-          <input type="email" placeholder="Enter your email" required>
+          <input type="email" placeholder="Enter your email" id="email">
         </div>
         <button>search</button>
       </form>
